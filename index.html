@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- const BOOKED = [1,4,8,11,15,18,22,25,29]; //  booked days THE ACTUAL LINE IS ON LIKE 1300 OE SOMETHING. Hopefully should be easy to find.  --> 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -1170,7 +1171,7 @@
     <div class="reveal">
       <p class="section-label">Scheduling</p>
       <h2 class="section-title">Check <em>Availability</em></h2>
-      <p style="color:var(--white-dim); font-size:0.85rem; margin-top:0.5rem; margin-bottom:0;">Select a date to request a booking — we'll confirm by phone within 24 hours.</p>
+      <p style="color:var(--white-dim); font-size:0.85rem; margin-top:0.5rem; margin-bottom:0;">Select a date to request a booking — we'll confirm by phone within 24 hours. - Calander accurate ~1 month out</p>
     </div>
     <div class="calendar-wrap reveal">
       <div class="cal-header">
@@ -1275,7 +1276,19 @@
   reveals.forEach(r => observer.observe(r));
 
   // ─── CALENDAR ───
-  const BOOKED = [3, 7, 12, 19, 24]; // example booked days
+
+
+
+  // Here Lies the variable for booked dayssssss. Edit as you need! Current issue is that this is for every month and does not distinguish between them so can only be accurate a moth out. 
+  //
+  //
+  //
+  const BOOKED = [1,4,8,11,15,18,22,25,29]; //  booked days
+  //
+  //
+  //
+  // I am trying to make it easy to find because GODDAMN it is burried. 
+
   let currentDate = new Date();
 
   function renderCalendar() {
